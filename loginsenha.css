@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+
+.telalogin {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.capa{
+    background-color: #DAD7CD;
+    width: 20em;
+    height: 35em;
+    position: relative;
+    border-radius: 1em;
+    box-shadow: 0 0.188em 1.550em black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.logo{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 75px;
+    right: 111px;
+    background-color: #ccc;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url();
+}
+
+
+.ret1{
+    box-sizing: border-box;
+    position: absolute;
+    width: 321px;
+    height: 37px;
+    left: 0px;
+    top: 0px;
+    background: #2DC653;
+    border: 3px solid #000000;
+}
+
+.botaologar{
+    box-sizing: border-box;
+    position: absolute;
+    width: 100px;
+    height: 50px;
+    left: 106px;
+    top:  350px;
+
+    background: #2DC653;
+    border: 3px solid #000000;
+    border-radius: 15px;
+}
+
+.botaovoltar{
+    box-sizing: border-box;
+    position: absolute;
+    width: 100px;
+    height: 50px;
+    left: 106px;
+    top:  415px;
+
+    background: #2DC653;
+    border: 3px solid #000000;
+    border-radius: 15px;
+}
+
+
+.inputlogin{
+    box-sizing: border-box;
+    position: absolute;
+    width: 270px;
+    height: 25px;
+    left: 26px;
+    top:  255px;
+
+    background: #DAD7CD;
+    border: 2px solid #000000;
+    border-radius: 3px;
+}
+
+
+.inputsenha{
+    box-sizing: border-box;
+    position: absolute;
+    width: 270px;
+    height: 25px;
+    left: 26px;
+    top:  315px;
+
+    background: #DAD7CD;
+    border: 2px solid #000000;
+    border-radius: 3px;
+}
+
+
+.nomelabel{
+    position: absolute;
+    top:  225px;
+    left: 135px;
+}
+
+
+.senhalabel{
+    position: absolute;
+    top:  285px;
+    left: 135px;
+}
