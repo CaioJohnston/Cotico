@@ -1,0 +1,13 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-direction: column;
+}
+
+#resultado{
+    width: 400px;
+    height: 500px;
+    border: 1px solid black;
+}
