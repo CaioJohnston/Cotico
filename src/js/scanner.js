@@ -1,15 +1,27 @@
-input = document.querySelector(".input-div input")
+const img = document.getElementById('img');
+const input = document.getElementById("input-file")
+const result = document.getElementById('prediction');
 
-input.addEventListener("change", () => {
-    const file = input.files
-    const classifier = ml5.imageClassifier('MobileNet', setup);
+let model;
+let classifier;
 
-    function setup(){
-        console.log('setup OK!')
-        console.log(file[0])
+input.onchange = () => {
+    classifier = ml5.imageClassifier('MobileNet');
+    img.src = URL.createObjectURL(input.files[0])
+    result.innerText = "Analisando..."
+}
+
+img.onload = () => {
+    classifier.classify(img, gotResult);
+}
+
+function gotResult(error, results) {
+    if (error) {
+      console.error(error);
     }
+    showPrediction(results);
+  }
 
-    classifier.classify(file[0], (err, results) => {
-        console.log(results);
-    });
-})
+function showPrediction(results) {
+    result.innerText = results[0].label;
+}
