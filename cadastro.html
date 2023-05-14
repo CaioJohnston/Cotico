@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/Cotico/src/css/loginstyle.css">
+    <link rel="stylesheet" href="/Cotico/src/css/cadastrostyle.css">
     <title>Cotico</title>
 </head>
 <body>
@@ -12,29 +12,33 @@
         <div class="formulario">
             <div class="form-value">
                 <form action="">
-                    <h2>Login</h2>
+                    <h2>Registrar</h2>
+                    <div class="inputbox">
+                        <ion-icon name="person"></ion-icon>
+                        <input type="text" required>
+                        <label for="">Nome</label>
+                    </div>
                     <div class="inputbox">
                         <ion-icon name="mail-outline"></ion-icon>
-                        <input type="email" required id="email">
+                        <input type="email" required>
                         <label for="">Email</label>
                     </div>
                     <div class="inputbox">
                         <ion-icon name="lock-closed-outline"></ion-icon>
-                        <input type="password" required id="senha">
+                        <input type="password" required>
                         <label for="">Senha</label>
                     </div>
                     <div class="retorno">
                         <p id="returnfield"></p>
                     </div>
-                    <button type="button" onclick="efetuarLogin()">Entrar</button>
+                    <button>Registrar</button>
                     <div class="register">
-                        <p>Não tem uma conta? <a href="/Cotico/cadastro.html">Registrar</a></p>
+                        <p>Já tem uma conta? <a href="/Cotico/login.html">Entrar</a></p>
                     </div>
                 </form>
             </div>
         </div>
     </section>
-    <script id="loginf" src="/Cotico/src/js/login.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
