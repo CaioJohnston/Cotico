@@ -6,7 +6,7 @@ function efetuarLogin(){
     const retorno = document.getElementById("returnfield")
 
     if (email == "caio@coticoapp.com" && senha == "caiocotico"){
-        location.href = "/Cotico/mapa.html";
+        location.href = "./mapa.html";
     }else{
         retorno.innerText = "Email e/ou Senha inválidos. Tente novamente."
     }
