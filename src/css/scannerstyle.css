@@ -19,24 +19,27 @@ section{
     background-position: center;
     background-size: cover;
 }
-.formulario{
+.form-value{
     position: relative;
     width: 90vw; 
     max-width: 450px;
     height: 80vh;
-    background: rgba(66, 103, 62, 0.589);
+    background: transparent;
     border: 2px solid rgba(44, 43, 43, 0.152);
     border-radius: 10px;
     backdrop-filter: blur(5px);
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    padding: 10%;
 }
 #img {
-    width: 70%;
-    max-width: 300px;
-    margin: 20px 0;
+    width: 100%;
+    /* max-width: 300px; */
+}
+.camera{
+    width: 50%; 
 }
 .form input {
     text-align: center;
@@ -47,23 +50,23 @@ section{
     border: none;
     color: white;
 }
-p{
+.teste{
     color: #fff;
     font-size: 1.5rem;
-    text-align: center;
-    margin: 20px 0;
 }
-h2{
+.title{
     font-size: 2rem;
     color: #fff;
     text-align: center;
-    padding: 20px;
+    font-weight: 700;
+    padding: 0 20px
 }
 label{
     color: #fff;
     font-size: 1.5rem;
     display: flex;
-    margin: 20px 0;
+    justify-content: center;
+    align-items: center;
 }
 
 input[type="file"]{
@@ -75,8 +78,8 @@ input[type="file"]{
     height: 90vh;
   }
   #img {
-    width: 50%;
-    max-width: 250px;
+    width: 100%;
+    /* max-width: 250px; */
   }
   p, label {
     font-size: 1rem;

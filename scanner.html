@@ -10,20 +10,17 @@
     </head>
 <body>
     <section>
-        <div class="formulario">
-            <div class="form-value">
-                <div class="content">
-                    <h2>Reconhecedor de Imagens</h2>
-                    <img id="img" crossorigin="anonymous"></img>
-                    <p id="prediction"></p> <!--aqui eh onde aparece o resultado -->
-                    <img class="input-div"> <!--aqui indica onde a imagem aparece -->
+        
+        <div class="form-value">
+                    <div class="title">Reconhecedor de Imagens</div>
+                    <img id="img"></img>
+                    <span class="teste" id="prediction"></span>
+                    <img class="input-div">
                         <input type="file" accept="image/*" id="file" capture/>
                         <label for="file">
-                            <img src="./src/css/images/cameraCotico.png" alt="Descrição da imagem">
+                            <img class="camera" src="./src/css/images/cameraCotico.png" alt="Descrição da imagem">
                         </label>
                     </div>
-                </div>
-            </div>
         </div>
     </section>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.min.js"></script>

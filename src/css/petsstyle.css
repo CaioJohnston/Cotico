@@ -11,6 +11,7 @@
 }
 
 html{
+   font-size: 80%;
    overflow-x: hidden;
 }
 
@@ -102,10 +103,11 @@ body{
    display: none;
    padding:2rem;
    text-align: center;
-   background: rgb(66, 103, 62);
+   background: rgb(255, 255, 255);
    position: relative;
    margin:2rem;
    width: 40rem;
+   border-radius: 20px;
 }
 
 .pets-preview .preview.active{
