@@ -1,31 +1,44 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-section{
+
+section {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
     width: 100%;
-    background: url('./images/coticoamasso.jpg')no-repeat;
+    background: url('./images/coticoamasso.jpg') no-repeat;
     background-position: center;
     background-size: cover;
 }
-.formulario{
+
+.formulario {
     position: relative;
-    width: 500px;
-    height: 800px;
+    width: 90%;
+    max-width: 500px;
+    height: auto;
     background: transparent;
     background-color: rgba(66, 103, 62, 0.589);
     border: 2px solid rgba(44, 43, 43, 0.152);
     border-radius: 20px;
     backdrop-filter: blur(5px);
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 20px;
+    padding: 20px;
 }
-h2{
+
+h2 {
     font-size: 2.5em;
     color: #fff;
     text-align: center;
     padding: 20px;
     font-family: poppins;
+}
+
+@media only screen and (max-width: 768px) {
+    .formulario {
+        max-width: 100%;
+    }
 }
