@@ -8,7 +8,7 @@ section {
     width: 100%;
     background-color: rgb(235, 235, 235);
     position: relative;
-    background: url('./images/coticoamasso.jpg') no-repeat;
+    background: url('./images/coticoFundo.png') no-repeat;
     background-position: center;
     background-size: cover;
 }
@@ -18,8 +18,7 @@ section {
     width: 100%;
     top: 0;
     background: rgb(235,235,235);
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.082) 0%, rgba(0, 0, 0, 0.452) 100%);
-
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.014) 0%, rgba(0, 0, 0, 0.452) 100%);
     display: grid;
     place-items: center;
 }
@@ -29,7 +28,7 @@ section {
     width: 90%;
     max-width: 500px;
     height: auto;
-    background: transparent;
+    background: rgba(255, 255, 255, 0.14);
     border: 2px solid rgba(44, 43, 43, 0.152);
     border-radius: 20px;
     backdrop-filter: blur(5px);

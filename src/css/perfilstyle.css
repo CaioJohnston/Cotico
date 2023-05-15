@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins';
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: url('./images/coticoFundo.png') no-repeat;
+    background-size: cover;
+}
+
+.perfil{
+    width: 370px;
+    text-align: center;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card-header{
+    background: rgba(1, 49, 56, 0.42);
+    padding: 35px 35px;
+}
+
+.pic{
+    display: inline-block;
+    padding: 8px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.082) 0%, rgba(0, 0, 0, 0.504) 100%);
+    margin: auto;
+    border-radius: 50%;
+    background-size: 200% 200%;
+    animation: animated-gradient 2s linear infinite;
+}
+
+@keyframes animated-gradient{
+    25%{
+        background-position: left bottom;
+    }
+    50%{
+        background-position: right bottom;
+    }
+    75%{
+        background-position: right top;
+    }
+    100%{
+        background-position: left top;
+    }
+}
+
+.pic img{
+    display: block;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.nome{
+    color: #fff;
+    font-size: 28px;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.rank{
+    font-size: 18px;
+    color: chartreuse;
+}
+
+.sair{
+    display: inline-block;
+    padding: 12px 50px;
+    color: #2e462b;
+    border:  2px solid #2e462b;
+    border-radius: 6px;
+    margin-top: 20px;
+    transition: .3s linear;
+}
+
+.sair:hover{
+    background: #2e462b;
+    color: #f2f2f2;
+}
+
+.card-footer{
+    background: #436140f9;
+    padding: 60px 10px;
+}
+
+.numeros{
+    display: flex;
+    align-items: center;
+}
+
+.itens{
+    flex: 1;
+    text-transform: uppercase;
+    font-size: 11px;
+    color: #fff;
+}
+
+.itens span{
+    display: block;
+    color: #fff;
+    font-size: 30px;
+}
+
+.border{
+    width: 1px;
+    height: 40px;
+    background: #2e462b;
+}
