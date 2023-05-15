@@ -1,5 +1,5 @@
 
-export function consultarLogin(){
+function consultarLogin(){
   const pg = require('pg');
   const conString = "postgres://nwxnuwzj:H6MxlTO1u2BoGSkHXr9ZImxw36zjmfDK@silly.db.elephantsql.com/nwxnuwzj";
   const client = new pg.Client(conString);

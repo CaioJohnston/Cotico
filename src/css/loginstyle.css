@@ -10,7 +10,7 @@ section{
     align-items: center;
     min-height: 100vh;
     width: 100%;
-    background: url('/Cotico/images/image0_1.png')no-repeat;
+    background: url('./images/coticoamasso.jpg')no-repeat;
     background-position: center;
     background-size: cover;
 }
