@@ -32,7 +32,10 @@ function showPrediction(results) {
     if (garrafaWhiteList.includes(results[0].label) || garrafaWhiteList.includes(results[1].label)) {
       result.innerText = "Garrafa Pet"
       linkElement.style.display = "block"
-    } else if (sacolaWhiteList.includes(results[0].label) || sacolafaWhiteList.includes(results[1].label)){
+    } else {
+      result.innerText = "Objeto não indentificado. Tente novamente."
+    }
+    if (sacolaWhiteList.includes(results[0].label) || sacolafaWhiteList.includes(results[1].label)){
       result.innerText = "Sacola Plástica"
       linkElement.style.display = "block"
     } else {
