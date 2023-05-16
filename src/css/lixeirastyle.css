@@ -102,12 +102,16 @@ label{
     border-radius: 6px;
 }
 
+#html5-qrcode-anchor-scan-type-change{
+    visibility: hidden;
+}
+
 button[type="button"]{
     display: none;
 }
 
 .camera{
-    width: 50%;
+    width: 25%;
 }
 
 #resultado{
