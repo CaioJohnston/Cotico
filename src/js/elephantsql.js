@@ -1,4 +1,3 @@
-
 function consultarLogin(){
   const pg = require('pg');
   const conString = "postgres://nwxnuwzj:H6MxlTO1u2BoGSkHXr9ZImxw36zjmfDK@silly.db.elephantsql.com/nwxnuwzj";
@@ -17,10 +16,20 @@ function consultarLogin(){
   });
 }
 
+const emails = []
+const senhas = []
+
 consultarLogin()
 .then((result) => {
-  console.log(result);
+  for (var i in result) {
+    emails.push(result[i].email)
+    senhas.push(result[i].senha)
+  }
+})
+.then(() => {
+  console.log(global.emails = emails)
+  console.log(global.senhas = senhas)
 })
 .catch((error) => {
-  console.error(error);
+  console.error(error)
 });

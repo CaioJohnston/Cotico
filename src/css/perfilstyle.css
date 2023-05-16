@@ -116,3 +116,21 @@ section{
     height: 40px;
     background: #2e462b;
 }
+
+.border2{
+    width: 300px;
+    height: 1px;
+    background: #436140f9;
+}
+
+p{
+    color: #fff;
+    font-size: 18px;
+    padding-top: 10px;
+}
+
+a{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+}

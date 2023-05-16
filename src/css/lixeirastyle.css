@@ -5,10 +5,12 @@
     padding: 0;
     font-family: 'poppins';
 }
+
 html, body {
     margin: 0;
     padding: 0;
 }
+
 .banner{
     position: absolute;
     height: 15%;
@@ -45,43 +47,19 @@ section{
     align-items: center;
     padding: 10%;
 }
-#img {
-    border: 8px solid #fff;
-    width: 280px;
-    height: 400px;
-}
-.camera{
-    width: 50%; 
-}
-.form input {
-    text-align: center;
-}
-.input-div input{
-    height: 36px;
-    padding: 0 10px;
-    border: none;
-    color: white;
-}
-.teste{
-    color: #fff;
-    font-size: 1.5rem;
-}
+
 .title{
     font-size: 2.5rem;
     color: #fff;
     text-align: center;
     font-weight: 600;
 }
+
 label{
     color: #fff;
-    font-size: 2.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-input[type="file"]{
-    display: none;
 }
 
 @media only screen and (max-width: 600px) {
@@ -97,9 +75,53 @@ input[type="file"]{
   }
 }
 
-.qrcode{
-    display: inline-block;
-    padding: 10px 48px;
+#nav-menu{
+    visibility: hidden;
+}
+
+#html5-qrcode-button-camera-permission{
+    width: 90px;
+}
+
+#leitor{
+    width: 270px;
+    height: 380px;
+    
+}
+
+#img{
+    visibility: hidden;
+}
+
+#leitor__scan_region{
+    height: 380px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:  4px solid #49494953;
+    border-radius: 6px;
+}
+
+#html5-qrcode-anchor-scan-type-change{
+    visibility: hidden;
+}
+
+button[type="button"]{
+    display: none;
+}
+
+.camera{
+    width: 50%;
+}
+
+#resultado{
+    font-size: 1.7rem;
+    color: #fff;
+    text-align: center;
+}
+
+.sair{
+    padding: 4px 10px;
     background: #474747;
     color: #fff;
     border:  4px solid #494949;

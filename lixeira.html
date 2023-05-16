@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cotico</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html5-qrcode/2.3.4/html5-qrcode.min.js" integrity="sha512-k/KAe4Yff9EUdYI5/IAHlwUswqeipP+Cp5qnrsUjTPCgl51La2/JhyyjNciztD7mWNKLSXci48m7cctATKfLlQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <link rel="icon" href="./src/css/images/coticologo.png">
+        <link rel="stylesheet" href="./src/css/lixeirastyle.css">
+    </head>
+    <body>
+        <section>
+            <div class="banner">
+                <span class="title">QR Code da Lixeira</span>
+            </div>
+    
+            <div class="form-value">
+                <div class="content">
+                    <a href="./scanner.html" class="sair">
+                        Sair
+                    </a>
+                    <img id="img" crossorigin="anonymous"></img>
+                    <div id="leitor"></div>
+                    <div id="lixeiraID"></div>
+                    </div>
+                    <label id="resultado" for="">
+                    </label>
+                    <label for="html5-qrcode-button-camera-permission">
+                        <img class="camera" src="./src/css/images/cameraCotico.png" alt="Descrição da imagem">
+                    </label>
+                </div>
+            </div>
+        </section>
+        <script id="imgrecog" src="./src/js/lixeira.js"></script>
+        <script id="replace_with_navbar" src="./navbar/navlink.js"></script>
+    </body>
+    </html>

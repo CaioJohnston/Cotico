@@ -5,30 +5,30 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Cotico</title>
-
+        <link rel="icon" href="./src/css/images/coticologo.png">
         <link rel="stylesheet" href="./src/css/scannerstyle.css">
     </head>
-<body>
-    <section>
-        <div class="banner">
-            <span class="title">Scanner de Itens</span>
-        </div>
-        
-        <div class="form-value">
-                    <img id="img"></img>
-                    <span class="teste" id="prediction"></span>
-                    <img class="input-div">
-                        <input type="file" accept="image/*" id="file" capture/>
-                        <label for="file">
-                            <img class="camera" src="./src/css/images/cameraCotico.png" alt="Descrição da imagem">
-                        </label>
-                    </div>
-        </div>
-    </section>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/addons/p5.sound.min.js"></script>
-    <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
-    <script id="imgrecog" src="./src/js/scanner.js"></script>
-    <script id="replace_with_navbar" src="./navbar/navlink.js"></script>
-</body>
-</html>
+    <body>
+        <section>
+            <div class="banner">
+                <span class="title">Scanner de Itens</span>
+            </div>
+            
+            <div class="form-value">
+                <img id="img"></img>
+                <span class="teste" id="prediction"></span>
+                <img class="input-div">
+                <input type="file" accept="image/*" id="file" capture/>
+                <label for="file">
+                    <img class="camera" src="./src/css/images/cameraCotico.png" alt="Descrição da imagem">
+                </label>
+                <a href="./lixeira.html" id="qrcodeLink" class="qrcode">Ir para QrCode</a>
+            </div>
+        </section>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/addons/p5.sound.min.js"></script>
+        <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
+        <script id="imgrecog" src="./src/js/scanner.js"></script>
+        <script id="replace_with_navbar" src="./navbar/navlink.js"></script>
+    </body>
+    </html>
