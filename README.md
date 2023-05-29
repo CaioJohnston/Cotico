@@ -29,7 +29,7 @@ npm install pg
 * **Vinicius Rayol** - *Back-end e Artigo* - [viinee1](https://github.com/Viinee1)
 * **Luiz Felipe Pina** - *Front-end* - [felp14](https://github.com/Felp14)
 * **Pedro Vitor Raiol** - *Banco de dados* - [samarum](https://github.com/Samarum)
-* **Lucas Borges** - *Pesquisa*
+* **Lucas Borges** - *Pesquisa* - [lukanott](https://github.com/Lukanott)
 
 ## 📄 Licença
 
