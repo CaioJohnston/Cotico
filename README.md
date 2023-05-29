@@ -10,8 +10,8 @@ O Cotico é um aplicativo desenvolvido em JavaScript, HTML e CSS, com o objetivo
 
 - Cadastro de usuários: Os usuários podem se cadastrar no aplicativo, fornecendo informações básicas como nome, e-mail e senha.
 - Login: Os usuários registrados podem fazer login no aplicativo usando seu e-mail e senha.
-- Reciclagem: O aplicativo permite que os usuários registrem suas atividades de reciclagem, como separação de resíduos, descarte correto de materiais, etc.
-- Reconhecimento de imagens: O Cotico utiliza a API de reconhecimento de imagens do ML5.js para identificar os itens recicláveis e fornecer feedback aos usuários.
+- Reciclagem: O aplicativo permite que os usuários registrem suas atividades de reciclagem utilizando um reconhecedor de imagens.
+- Reconhecimento de imagens: O Cotico utiliza a API de reconhecimento de imagens do ML5.js para identificar os itens recicláveis e recompensar seus usuários.
 - Sistema de recompensas: Cada vez que um usuário registra uma atividade de reciclagem, ele é recompensado com um "pet" (badge) virtual, que representa suas conquistas no aplicativo.
 - Banco de dados: O aplicativo utiliza o Node.js e o Elephant SQL como banco de dados para armazenar informações dos usuários, atividades de reciclagem e recompensas
 
