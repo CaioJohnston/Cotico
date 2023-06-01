@@ -16,23 +16,23 @@
                     <h2>Registrar</h2>
                     <div class="inputbox">
                         <ion-icon name="person"></ion-icon>
-                        <input type="text" required>
+                        <input type="text" required id="nome">
                         <label for="">Nome</label>
                     </div>
                     <div class="inputbox">
                         <ion-icon name="mail-outline"></ion-icon>
-                        <input type="email" required>
+                        <input type="email" required id="email">
                         <label for="">Email</label>
                     </div>
                     <div class="inputbox">
                         <ion-icon name="lock-closed-outline"></ion-icon>
-                        <input type="password" required>
+                        <input type="password" required id="senha">
                         <label for="">Senha</label>
                     </div>
                     <div class="retorno">
                         <p id="returnfield"></p>
                     </div>
-                    <button>Registrar</button>
+                    <button type="button" onclick="efetuarCadastro()">Registrar</button>
                     <div class="register">
                         <p>Já tem uma conta? <a href="./index.html">Entrar</a></p>
                     </div>
@@ -40,6 +40,7 @@
             </div>
         </div>
     </section>
+    <script  id="cadastrof" src="./src/js/cadastro.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
