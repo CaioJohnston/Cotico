@@ -21,7 +21,7 @@
                     <img id="foto" src="">
                 </a-assets>
                 <a-marker preset="hiro">
-                    <a-image width="2" height="2" position="0 0 0" rotation="90 180 0" src="#foto"></a-image>
+                    <a-image id="ar-image" width="2" height="2" position="0 0 0" rotation="90 180 0" src="#foto"></a-image>
                 </a-marker>
 
                 <a-entity camera></a-entity>
@@ -37,11 +37,18 @@
 
         document.addEventListener("DOMContentLoaded", function() {
             let imgName = getQueryParam('img');
+            let imgElement = document.getElementById('foto');
+            let arImageElement = document.getElementById('ar-image');
             if (imgName) {
-                document.getElementById('foto').src = `./src/css/images/${imgName}`;
+                imgElement.src = `./src/css/images/${imgName}`;
             } else {
-                document.getElementById('foto').src = './src/css/images/cap1.png'; // valor padrão
+                imgElement.src = './src/css/images/cap1.png'; // valor padrão
             }
+
+            // Certifique-se de que o src do a-image seja atualizado após a imagem ser carregada
+            imgElement.onload = function() {
+                arImageElement.setAttribute('src', '#foto');
+            };
         });
     </script>
 </body>
