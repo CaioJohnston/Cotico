@@ -37,18 +37,11 @@
 
         document.addEventListener("DOMContentLoaded", function() {
             let imgName = getQueryParam('img');
-            let imgElement = document.getElementById('foto');
-            let arImageElement = document.getElementById('ar-image');
             if (imgName) {
-                imgElement.src = `./src/css/images/${imgName}`;
+                document.getElementById('foto').src = `./src/css/images/${imgName}`;
             } else {
-                imgElement.src = './src/css/images/cap1.png'; // valor padrão
+                document.getElementById('foto').src = './src/css/images/cap1.png'; // valor padrão
             }
-
-            // Certifique-se de que o src do a-image seja atualizado após a imagem ser carregada
-            imgElement.onload = function() {
-                arImageElement.setAttribute('src', '#foto');
-            };
         });
     </script>
 </body>
